@@ -1,0 +1,32 @@
+4.2
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Creating a schema for xml file-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+ <xs:element name="Rollno" type="xs:integer"></xs:element>
+ <xs:element name="StudentName" type="xs:string"></xs:element>
+
+ <!-- Defining an element which can have only 3 values -->
+ <xs:element name="Stream">
+    <xs:simpleType>
+    <xs:restriction base="xs:string">
+    <xs:enumeration value="Science"/>
+    <xs:enumeration value="Arts"/>
+    <xs:enumeration value="Commerce"/>
+    </xs:restriction>
+    </xs:simpleType>
+    </xs:element>
+
+<!-- Defining the root element which is of complex type -->
+    <xs:element name="Student">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Rollno"></xs:element>
+        <xs:element ref="StudentName"></xs:element>
+        <xs:element ref="Stream"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

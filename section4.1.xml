@@ -1,0 +1,26 @@
+4.1
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Student is the root element of this xml -->
+<Student xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Section4.xsd">
+  <!-- Defining the data for Student -->
+  <Rollno>1001</Rollno>
+  <StudentName>Anil</StudentName>
+  <Stream>Science</Stream>
+
+  <Rollno>1002</Rollno>
+  <StudentName>Madhavi</StudentName>
+  <Stream>Arts</Stream>
+
+  <Rollno>1003</Rollno>
+  <StudentName>Rajeev</StudentName>
+  <Stream>Science</Stream>
+
+  <Rollno>1004</Rollno>
+  <StudentName>Shalaka</StudentName>
+  <Stream>Commerce</Stream>
+
+  <Rollno>1005</Rollno>
+  <StudentName>Jivika</StudentName>
+  <Stream>Arts</Stream>
+
+  </Student>
